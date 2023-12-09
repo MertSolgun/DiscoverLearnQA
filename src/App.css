@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Kalnia:wght@300&display=swap");
+body {
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Kalnia", serif;
+}
+.header h1 {
+  font-family: "Kalnia", serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kalnia", serif;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  line-height: 2rem;
+}
+.questionMain {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.answer {
+  max-width: 500px;
+  padding: 10px;
+  background-color: #b0c8fe;
+  margin: auto;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.question {
+  background-color: #ebbff1;
+  width: 500px;
+  padding: 30px;
+  gap: 10px;
+  margin: 10px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+}
+
+.App {
+  margin: 30px auto;
+}
+@media (max-width: 900px) {
+  .question {
+    width: 450px;
+    font-size: 0.9rem;
+  }
+  .answer {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    margin: 30px auto;
+  }
+  .question {
+    max-width: 80%;
+    font-size: 0.9rem;
+  }
+  .answer {
+    max-width: 90%;
+  }
+}
